@@ -1,11 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -100,10 +95,10 @@ input, select, textarea {
 
 	body {
 		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #76e3e3 15%, #4d6e93 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #76e3e3 15%, #4d6e93 85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #76e3e3 15%, #4d6e93 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #76e3e3 15%, #4d6e93 85%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -339,6 +334,13 @@ input, select, textarea {
 
 	.work-item .image {
 		margin: 0 0 1.5em 0;
+
+		
+		border-radius: 0.35em;
+		border: 0;
+			border-bottom-color: currentcolor;
+		display: inline-block;
+		position: relative;
 	}
 
 	.work-item h3 {
@@ -2415,8 +2417,8 @@ input, select, textarea {
 		}
 
 		.image.thumb:hover:before {
-			background: url("images/overlay.png"), url("images/overlay.png");
-			opacity: 1.0;
+			background: #868686;
+			opacity: 0.5;
 		}
 
 		.image img {
@@ -3325,7 +3327,7 @@ body.is-touch .poptrox-popup .closer {
 		background-color: #ffffff;
 		color: #636363;
 		position: absolute;
-		width: 64em;
+		width: 80em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
 		background-color: #f7f7f7;
@@ -3870,7 +3872,7 @@ body.is-touch .poptrox-popup .closer {
 /* Wrapper */
 
 	#wrapper {
-		width: 64em;
+		width: 80em;
 		max-width: calc(100% - 4em);
 		margin: 0 auto;
 	}
@@ -3889,4 +3891,66 @@ body.is-touch .poptrox-popup .closer {
 				max-width: 100%;
 			}
 
+		}
+
+		
+		.social-section {
+		  text-align: center;
+		  color: rgb(77, 77, 77);
+		  background-color: #ffffff;
+		  padding: 50px 0;
+		}
+		* {
+		  margin: 0;
+		  padding: 0;
+		  box-sizing: border-box;
+		}
+		*, ::before, ::after {
+		  box-sizing: border-box;
+		}
+		body {
+		  --fbc-blue-60: #0060df;
+		  --fbc-blue-70: #003eaa;
+		  --fbc-gray-20: #ededf0;
+		  --fbc-light-gray: #F0F0F4;
+		  --fbc-white: #ffffff;
+		  --fbc-transition: all .15s cubic-bezier(.07,.95,0,1);
+		  --fbc-borders: 1px solid #ededf0;
+		  --fbc-primary-text: #15141A;
+		  --fbc-secondary-text: #5B5B66;
+		  --fbc-font-size: 13px;
+		}
+		body {
+		  font-family: var(--body-font);
+		  font-size: var(--normal-font-size);
+		  color: var(--second-color);
+		}
+		:host, :root {
+		  --rem: 16;
+		}
+		@media screen and (min-width: 968px) {
+		  :root {
+			--big-font-size: 3.5rem;
+			--h2-font-size: 2rem;
+			--normal-font-size: 1rem;
+			--smaller-font-size: .875rem;
+		  }
+		}
+		:root {
+		  --header-height: 3rem;
+		  --font-semi: 600;
+		  --hue-color: 224;
+		  --first-color: hsl(var(--hue-color), 89%, 60%);
+		  --second-color: hsl(var(--hue-color), 56%, 12%);
+		  --body-font: "Poppins", sans-serif;
+		  --big-font-size: 2rem;
+		  --h2-font-size: 1.25rem;
+		  --normal-font-size: .938rem;
+		  --smaller-font-size: .75rem;
+		  --mb-2: 1rem;
+		  --mb-4: 2rem;
+		  --mb-5: 2.5rem;
+		  --mb-6: 3rem;
+		  --z-back: -10;
+		  --z-fixed: 100;
 		}
